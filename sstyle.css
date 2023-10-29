@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.block{
+    display: block;
+    
+    width: 200px;
+    height: 5px;
+    background-color: blue;
+}
+.ball{
+    display: block;
+    width: 100px;
+    
+    height: 100px;
+    margin-left: 85px;
+    border: 5px solid black;
+    border-radius: 50%;
+    animation-name: ball;
+    animation-duration: 8s;
+    /* animation-iteration-count: calc(2); */
+}
+.block,.ball{
+   
+}
+@keyframes ball{
+    5%{
+        transform: translateX(98px);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    14%{
+        transform: translateX(300px) translateY(800px);
+        width: 160px;
+        height: 100px;
+        border-radius: 45%;
+    }
+    25%{
+        transform: translateX(500px) translateY(300px) rotate(-0.1turn);
+        width: 100px;
+        height: 100px;
+        
+        border-radius: 45%;
+    }
+    40%{
+        transform: translateX(900px) translateY(800px) rotate(-0.1turn);
+        width: 100px;
+        height: 100px;
+        
+        border-radius: 50%;
+    }
+    55%{
+        transform: translateX(1050px) translateY(500px) rotate(-0.1turn);
+        width: 100px;
+        height: 100px;
+        
+        border-radius: 50%;
+    }
+    70%{
+        transform: translateX(1350px) translateY(800px) rotate(-0.1turn);
+        width: 100px;
+        height: 100px;
+        
+        border-radius: 50%;
+    }
+    85%{
+        transform: translateX(1550px) translateY(650px) rotate(-0.1turn);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    100%{
+        transform: translateX(1750px) translateY(700px) rotate(-0.1turn);
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+   
+
+}
